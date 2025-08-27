@@ -19,22 +19,17 @@ Passionate about **data storytelling, dashboards, and process optimization**, I 
 - Project Management (Agile & Waterfall)  
 - Data Storytelling  
 - Financial Modelling  
-- Instructional Systems Design 
+- Instructional Systems Design
+- 
 ## 📂 Projects Showcase  
 
-### 1. People Diversity & Inclusion Dashboard  
-![People Diversity & Inclusion](assets/People%20Diversity%20%26%20Inclusion.png)  
-*Interactive Power BI dashboard analyzing diversity metrics across the organization.*  
-
----
-
-### 2. Contact Centre Churn Analysis  
+### 1. Contact Centre Churn Analysis  
 ![Contact Centre Churn Analysis](assets/Contact%20Centre%20Churn%20Analysis.png)  
 *Dashboard highlighting customer churn trends in the contact center with actionable insights.*  
 
 ---
 
-### 3. Diversity & Inclusion Walkthrough (Video)  
+### 2. Diversity & Inclusion Walkthrough (Video)  
 [![Watch the Video](assets/People%20Diversity%20%26%20Inclusion.png)](assets/Diversity%20%26%20Inclusion.mp4)  
 *A short walkthrough video (instructional design sample) explaining dashboard insights for non-technical users.*  
 
