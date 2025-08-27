@@ -1,16 +1,12 @@
-https://github.com/WWWandu.png
-
 # 👋 Hi, I'm Wilson W. Wandu  
-
-💡 **BI Developer | Instructional Designer | IT Strategist**  
-Transforming complex data into insights and stories that drive decisions, adoption, and innovation.  
+I Transforming complex data into insights and stories that drive decisions, adoption, and innovation. 
 
 ## 🚀 Quick Navigation
 - [Skills & Projects](#skills--projects)
 - [Work Experience](#work-experience)
 
 ## 🔹 About Me  
-Results-driven **Business Analyst & BI Developer** with experience in banking, digital transformation, and data analytics.  
+I'm a results-driven **Business Analyst, BI Developer and Instructional Systems Designer** with experience in banking, digital transformation, and data analytics.  
 
 I specialize in **Power BI development** — from **data modeling, DAX calculations, and ETL processes** to building **interactive dashboards and reports** that transform raw data into actionable insights. Adept at **bridging IT and business**, I ensure technical solutions deliver real business value.  
 
