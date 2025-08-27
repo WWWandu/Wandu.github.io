@@ -3,15 +3,13 @@
 💡 **BI Developer | Instructional Designer | IT Strategist**  
 Transforming complex data into insights and stories that drive decisions, adoption, and innovation.  
 
+## 🚀 Quick Navigation
+- [Skills & Projects](#skills--projects)
+- [Work Experience](#work-experience)
+
 ---
 
-## 🔹 About Me  
-Results-driven **Business Analyst & BI Developer** with experience in banking, digital transformation, and data analytics.  
-
-I specialize in **Power BI development** — from **data modeling, DAX calculations, and ETL processes** to building **interactive dashboards and reports** that transform raw data into actionable insights. Adept at **bridging IT and business**, I ensure technical solutions deliver real business value.  
-
-Passionate about **data storytelling, dashboards, and process optimization**, I enjoy making data consumable and impactful for non-technical audiences.  
-
+## Skills & Projects
 ## 🛠️ Skills & Tools  
 - Business Intelligence & Data Analysis  
 - **Power BI**, Microsoft Fabric, SAP (HR)  
@@ -35,6 +33,7 @@ Passionate about **data storytelling, dashboards, and process optimization**, I 
 
 ---
 
+## Work Experience
 ## 💼 Work Experience  
 
 **IT Business Analyst**  
@@ -63,6 +62,18 @@ Passionate about **data storytelling, dashboards, and process optimization**, I 
 **Other Roles**  
 - Financial Consultant & Trainer, *ICEA Lion Group* (Jun 2022 – Dec 2022)  
 - Freelance Brand Creative Designer (Jan 2020 – Dec 2022)  
+
+---
+
+## 🔹 About Me  
+Results-driven **Business Analyst & BI Developer** with experience in banking, digital transformation, and data analytics.  
+
+I specialize in **Power BI development** — from **data modeling, DAX calculations, and ETL processes** to building **interactive dashboards and reports** that transform raw data into actionable insights. Adept at **bridging IT and business**, I ensure technical solutions deliver real business value.  
+
+Passionate about **data storytelling, dashboards, and process optimization**, I enjoy making data consumable and impactful for non-technical audiences.  
+
+
+
 
 ---
 
