@@ -41,7 +41,6 @@ Passionate about **data storytelling, dashboards, and process optimization**, I 
 - **Executive Technical Storytelling** – Delivered dashboards & reports on uptime, SLA, and KPIs for leadership decision-making.  
 - **PwC Power BI Simulation** – Designed gender diversity analytics dashboards with clear visual storytelling. 
 ---
-
 ## Work Experience
 ## 💼Professional Experience  
 
