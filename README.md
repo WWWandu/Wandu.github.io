@@ -23,6 +23,7 @@ Passionate about **data storytelling, dashboards, and process optimization**, I 
 - Data Storytelling  
 - Financial Modelling  
 - Instructional Systems Design
+
 ## 📂 Projects Showcase  
 
 ### 1. Contact Centre Churn Analysis  
@@ -30,7 +31,6 @@ Passionate about **data storytelling, dashboards, and process optimization**, I 
 *Dashboard highlighting customer churn trends in the contact center with actionable insights.*  
 
 ---
-
 ### 2. Diversity & Inclusion Walkthrough (Video)  
 [![Watch the Video](assets/People%20Diversity%20%26%20Inclusion.png)](assets/Diversity%20%26%20Inclusion.mp4)  
 *A short walkthrough video (instructional design sample) explaining dashboard insights for non-technical users.*  
