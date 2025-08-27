@@ -31,10 +31,15 @@ Transforming complex data into insights and stories that drive decisions, adopti
 [![Watch the Video](assets/People%20Diversity%20%26%20Inclusion.png)](assets/Diversity%20%26%20Inclusion.mp4)  
 *A short walkthrough video (instructional design sample) explaining dashboard insights for non-technical users.*  
 
+## 🚀 Achievements & Projects  
+- **Digital Transformation @ Tambulika Sacco** – Supported from data collection to deployment, boosting efficiency & customer support.  
+- **System Training Library** – Built internal explainer videos for ITSM Daraja & CRM, streamlining onboarding.  
+- **Executive Technical Storytelling** – Delivered dashboards & reports on uptime, SLA, and KPIs for leadership decision-making.  
+- **PwC Power BI Simulation** – Designed gender diversity analytics dashboards with clear visual storytelling. 
 ---
 
 ## Work Experience
-## 💼 Work Experience  
+## 💼Professional Experience  
 
 **IT Business Analyst**  
 *NCBA Bank – Nairobi, Kenya* | *Jan 2024 – Present*  
@@ -92,13 +97,7 @@ Passionate about **data storytelling, dashboards, and process optimization**, I 
 - **Certified Instructional Systems Designer** – IHRM, 2023  
 - **Financial Modelling & Valuation Analysis** – CFI, 2022  
 
----
-
-## 🚀 Achievements & Projects  
-- **Digital Transformation @ Tambulika Sacco** – Supported from data collection to deployment, boosting efficiency & customer support.  
-- **System Training Library** – Built internal explainer videos for ITSM Daraja & CRM, streamlining onboarding.  
-- **Executive Technical Storytelling** – Delivered dashboards & reports on uptime, SLA, and KPIs for leadership decision-making.  
-- **PwC Power BI Simulation** – Designed gender diversity analytics dashboards with clear visual storytelling.  
+--- 
 
 ---
 
@@ -110,7 +109,7 @@ Passionate about **data storytelling, dashboards, and process optimization**, I 
 - 📍 Nairobi, Kenya  
 - 📧 [wilsonwwandu@outlook.com](mailto:wilsonwwandu@outlook.com)  
 - 📞 +254 716 277141  
-- 🖥️ [GitHub Portfolio](https://github.com/WWWandu/My-Projects)  
+- 🖥️ [GitHub Portfolio](https://wwwandu.github.io/Wandu.github.io/)  
 
 ---
 ⭐️ *“Turning data into stories that inspire action.”*  
