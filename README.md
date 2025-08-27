@@ -1,3 +1,5 @@
+https://github.com/WWWandu.png
+
 # 👋 Hi, I'm Wilson W. Wandu  
 
 💡 **BI Developer | Instructional Designer | IT Strategist**  
