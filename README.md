@@ -7,7 +7,12 @@ Transforming complex data into insights and stories that drive decisions, adopti
 - [Skills & Projects](#skills--projects)
 - [Work Experience](#work-experience)
 
----
+## 🔹 About Me  
+Results-driven **Business Analyst & BI Developer** with experience in banking, digital transformation, and data analytics.  
+
+I specialize in **Power BI development** — from **data modeling, DAX calculations, and ETL processes** to building **interactive dashboards and reports** that transform raw data into actionable insights. Adept at **bridging IT and business**, I ensure technical solutions deliver real business value.  
+
+Passionate about **data storytelling, dashboards, and process optimization**, I enjoy making data consumable and impactful for non-technical audiences.  
 
 ## Skills & Projects
 ## 🛠️ Skills & Tools  
@@ -18,7 +23,6 @@ Transforming complex data into insights and stories that drive decisions, adopti
 - Data Storytelling  
 - Financial Modelling  
 - Instructional Systems Design
-- 
 ## 📂 Projects Showcase  
 
 ### 1. Contact Centre Churn Analysis  
@@ -41,17 +45,12 @@ Transforming complex data into insights and stories that drive decisions, adopti
 ## Work Experience
 ## 💼Professional Experience  
 
-**IT Business Analyst**  
-*NCBA Bank – Nairobi, Kenya* | *Jan 2024 – Present*  
+**IT Business Analyst & Instructional Systems Designer**  
+*NCBA Bank – Nairobi, Kenya* | *Dec 2022 – Present*  
 - Bridged IT and business to align tech initiatives with strategy.  
 - Simplified complex data into dynamic **Power BI dashboards** and visual reports.  
 - Produced explainer videos to improve adoption of tools like **NCBA Daraja** & **Microsoft CRM D365**.  
 - Supported IT strategy formulation and digital transformation programs.  
-
-**Learning Analyst & Instructional Designer**  
-*NCBA Bank – Nairobi, Kenya* | *Dec 2022 – Jan 2024*  
-- Developed **L&D dashboards** and tailored training programs.  
-- Conducted needs assessments & managed vendor training.  
 
 **Business Analyst**  
 *Tambulika Sacco – Nairobi, Kenya* | *May 2019 – Dec 2021*  
@@ -67,18 +66,6 @@ Transforming complex data into insights and stories that drive decisions, adopti
 **Other Roles**  
 - Financial Consultant & Trainer, *ICEA Lion Group* (Jun 2022 – Dec 2022)  
 - Freelance Brand Creative Designer (Jan 2020 – Dec 2022)  
-
----
-
-## 🔹 About Me  
-Results-driven **Business Analyst & BI Developer** with experience in banking, digital transformation, and data analytics.  
-
-I specialize in **Power BI development** — from **data modeling, DAX calculations, and ETL processes** to building **interactive dashboards and reports** that transform raw data into actionable insights. Adept at **bridging IT and business**, I ensure technical solutions deliver real business value.  
-
-Passionate about **data storytelling, dashboards, and process optimization**, I enjoy making data consumable and impactful for non-technical audiences.  
-
-
-
 
 ---
 
@@ -98,13 +85,6 @@ Passionate about **data storytelling, dashboards, and process optimization**, I 
 - **Financial Modelling & Valuation Analysis** – CFI, 2022  
 
 --- 
-
----
-
- 
-
----
-
 ## 📫 Let’s Connect  
 - 📍 Nairobi, Kenya  
 - 📧 [wilsonwwandu@outlook.com](mailto:wilsonwwandu@outlook.com)  
