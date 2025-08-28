@@ -1,4 +1,5 @@
-👋 Hi, I'm Wilson W. Wandu  
+👋 **Hi, I'm Wilson Wandu** 
+
 I Transforming complex data into insights and stories that drive decisions, adoption, and innovation. 
 
 ## 🚀 Quick Navigation
@@ -74,13 +75,15 @@ Passionate about **data storytelling, dashboards, and process optimization**, I 
 ---
 
 ## 📜 Certifications  
-- Microsoft Certified: **Power BI Data Analyst Associate** *(2024 – Current)*  
-- **Advanced Certificate in Program & Project Management** – Udemy  
-- **Six Sigma Black Belt** – Skillsoft  
-- **ITIL Foundation**  
-- **PwC Power BI Job Simulation** – Sept 2024  
-- **Certified Instructional Systems Designer** – IHRM, 2023  
-- **Financial Modelling & Valuation Analysis** – CFI, 2022  
+- Microsoft Azure AI Fundamentals: Completed
+- Generative AI By Microsoft & LinkedIn: Completed
+- Advanced Certificate in Program & Project Management: Completed-Udemy
+- Six Sigma Black Belt-Analyzing Process Flows and Key Performance Metrics: Completed 
+- Microsoft Certified: Power BI Data Analyst Associate:Ongoing
+- ITIL Foundation- Completed
+- PwC Power BI Job Simulation – Sept 2024  
+- Certified Instructional Systems Designer – IHRM, 2023  
+- Financial Modelling & Valuation Analyst – CFI, 2022  
 
 --- 
 ## 📫 Let’s Connect  
