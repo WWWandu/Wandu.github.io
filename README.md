@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Wilson W. Wandu  
+👋 Hi, I'm Wilson W. Wandu  
 I Transforming complex data into insights and stories that drive decisions, adoption, and innovation. 
 
 ## 🚀 Quick Navigation
