@@ -1,6 +1,6 @@
 👋 **Hi, I'm Wilson Wandu** 
 
-I Transforming complex data into insights and stories that drive decisions, adoption, and innovation. 
+I transform complex data into insights and stories that drive decisions, adoption, and innovation. 
 
 ## 🚀 Quick Navigation
 - [Skills & Projects](#skills--projects)
