@@ -20,8 +20,9 @@ Passionate about **data storytelling, dashboards, and process optimization**, I 
 - Dashboards & Data Visualization  
 - Project Management (Agile & Waterfall)  
 - Data Storytelling  
-- Financial Modelling  
+- Process Optimization & Lean Reporting  
 - Instructional Systems Design
+- Data Pipeline Optimization
 
 ## 📂 Projects Showcase  
 
@@ -44,6 +45,10 @@ Passionate about **data storytelling, dashboards, and process optimization**, I 
 ## Work Experience
 ## 💼Professional Experience  
 
+**Business Process Architect**  
+*NCBA Bank – Nairobi, Kenya* | *Sep 2025 – Present* 
+- Lead end-to-end optimization of Power BI dashboards and ETL workflows, automating data refresh cycles and improving report delivery time.
+- Champion process improvements and automation in reporting workflows (CI/CD & Microsoft Fabric) to enhance reliability and scalability
 **IT Business Analyst & Instructional Systems Designer**  
 *NCBA Bank – Nairobi, Kenya* | *Dec 2022 – Present*  
 - Bridged IT and business to align tech initiatives with strategy.  
