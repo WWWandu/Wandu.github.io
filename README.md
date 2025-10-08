@@ -31,22 +31,15 @@ Passionate about **data storytelling, dashboards, and process optimization**, I 
 *Dashboard highlighting customer churn trends in the contact center with actionable insights.*  
 
 ---
-### 2. Diversity & Inclusion Walkthrough (Video)  
-<div align="center">
+###  2.🎥 NCBA Customer Self Service Portal Training
 
-  <h3>🎥 NCBA Customer Self Service Portal Training</h3>
+This video demonstrates my expertise in **system training**, **instructional design**, and **user enablement**.  
+It showcases how I simplify technical processes into clear, engaging learning content that helps users adopt systems with confidence and ease.
 
-  <p>
-    This video demonstrates my expertise in <b>system training</b>, <b>instructional design</b>, and <b>user enablement</b>.<br>
-    It showcases how I simplify technical processes into clear, engaging learning content that helps users adopt systems with confidence and ease.
-  </p>
-
-  <video width="80%" controls>
-    <source src="https://raw.githubusercontent.com/WanduLightHub.io/main/assets/NCBA%20Customer%20Self%20Service%20Portal%20Log%20In.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-</div>
+<video width="600" controls>
+  <source src="https://raw.githubusercontent.com/WanduLightHub.io/main/assets/NCBA%20Customer%20Self%20Service%20Portal%20Log%20In.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## 🚀 Achievements & Projects  
 - **Digital Transformation @ Tambulika Sacco** – Supported from data collection to deployment, boosting efficiency & customer support.  
