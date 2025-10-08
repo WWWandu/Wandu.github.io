@@ -32,8 +32,21 @@ Passionate about **data storytelling, dashboards, and process optimization**, I 
 
 ---
 ### 2. Diversity & Inclusion Walkthrough (Video)  
-[![Watch the Video](assets/People%20Diversity%20%26%20Inclusion.png)](assets/Diversity%20%26%20Inclusion.mp4)  
-*A short walkthrough video (instructional design sample) explaining dashboard insights for non-technical users.*  
+<div align="center">
+
+  <h3>🎥 NCBA Customer Self Service Portal Training</h3>
+
+  <p>
+    This video demonstrates my expertise in <b>system training</b>, <b>instructional design</b>, and <b>user enablement</b>.<br>
+    It showcases how I simplify technical processes into clear, engaging learning content that helps users adopt systems with confidence and ease.
+  </p>
+
+  <video width="80%" controls>
+    <source src="https://raw.githubusercontent.com/WanduLightHub.io/main/assets/NCBA%20Customer%20Self%20Service%20Portal%20Log%20In.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+</div>
 
 ## 🚀 Achievements & Projects  
 - **Digital Transformation @ Tambulika Sacco** – Supported from data collection to deployment, boosting efficiency & customer support.  
