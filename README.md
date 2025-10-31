@@ -1,6 +1,12 @@
-👋 **Hi, I'm Wilson Wandu** 
+<p align="left">
+  <img src="https://raw.githubusercontent.com/WWWandu/Wandu.github.io/main/assets/Wilson%20Passport.png"
+       alt="Wilson W. Wandu"
+       width="180"
+       style="border-radius: 50%; object-fit: cover; box-shadow: 0 0 15px rgba(123, 97, 255, 0.5);" />
+</p>
 
-I transform complex data into insights and stories that drive decisions, adoption, and innovation. 
+👋 **Hi, I'm Wilson Wandu** 
+Tech-savvy, data-driven, and curious by nature. I thrive on using BI and automation to simplify work, uncover insights, and tell data stories that inspire better decisions.
 
 ## 🚀 Quick Navigation
 - [Skills & Projects](#skills--projects)
