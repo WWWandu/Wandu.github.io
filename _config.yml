@@ -1,8 +1,12 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/WWWandu/Wandu.github.io/main/assets/Wilson%20Passport.png"
+<!-- Profile Photo at the Top -->
+<div style="text-align: center; margin-top: 30px;">
+  <img src="assets/Wilson-Passport.png"
        alt="Wilson W. Wandu"
        width="180"
-       style="border-radius: 50%; object-fit: cover; box-shadow: 0 0 15px rgba(123, 97, 255, 0.5);" />
+       style="border-radius: 50%; object-fit: cover; box-shadow: 0 0 20px rgba(106, 90, 205, 0.5);" />
+  <h1 style="margin-top: 15px;">Wilson W. Wandu</h1>
+  <p>Tech Strategist | BI & Automation Innovator | Storytelling That Drives Action</p>
+</div>
 </p>
 title: "Wilson W Wandu"
 description: "My Portfolio"
