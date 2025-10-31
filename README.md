@@ -52,15 +52,19 @@ It showcases how I simplify technical processes into clear, engaging learning co
 ## 💼Professional Experience  
 
 **Business Process Architect**  
-*NCBA Bank – Nairobi, Kenya* | *Sep 2025 – Present* 
+*NCBA Bank – Nairobi, Kenya* | *Oct 2025 – Present* 
 - Lead end-to-end optimization of Power BI dashboards and ETL workflows, automating data refresh cycles and improving report delivery time.
 - Champion process improvements and automation in reporting workflows (CI/CD & Microsoft Fabric) to enhance reliability and scalability
+
 **IT Business Analyst & Instructional Systems Designer**  
-*NCBA Bank – Nairobi, Kenya* | *Dec 2022 – Present*  
+*NCBA Bank – Nairobi, Kenya* | *Feb 2024 – Oct 2025*  
 - Bridged IT and business to align tech initiatives with strategy.  
 - Simplified complex data into dynamic **Power BI dashboards** and visual reports.  
 - Produced explainer videos to improve adoption of tools like **NCBA Daraja** & **Microsoft CRM D365**.  
-- Supported IT strategy formulation and digital transformation programs.  
+- Supported IT strategy formulation and digital transformation programs.
+
+**Learning Analyst & Instructional Designer**  
+*NCBA Bank – Nairobi, Kenya* | *Dec 2022 – Feb 2024*  
 
 **Business Analyst**  
 *Tambulika Sacco – Nairobi, Kenya* | *May 2019 – Dec 2021*  
