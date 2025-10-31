@@ -28,26 +28,24 @@ Passionate about **data storytelling, dashboards, and process optimization**, I 
 
 ### 1. Contact Centre Churn Analysis  
 *Dashboard highlighting customer churn trends in the contact center with actionable insights.*  
-<video src="https://github.com/WWWandu/Wandu.github.io/raw/main/assets/Customer%20Churn%20Rate.mp4" width="400" autoplay loop muted playsinline></video>
-  <br>
-  <sub>Customer Churn Rate</sub>
-
-</div>
+<video src="https://github.com/WWWandu/Wandu.github.io/raw/main/assets/Customer%20Churn%20Rate.mp4" width="640" height="360" controls playsinline></video>
+<br>
+<sub>Customer Churn Rate</sub>
 
 ###  2.🎥 This videos demonstrates my expertise in **system training**, **instructional design**, and **user enablement**. 
 They showcase how I simplify technical processes into clear, engaging learning content that helps users adopt systems with confidence and ease.
  
-<div align="center">
+<video src="https://github.com/WWWandu/Wandu.github.io/raw/main/assets/CRM%20Training-Cut%20Clip.mp4" width="640" height="360" controls playsinline></video>
+<br>
+<sub>CRM Training</sub>
 
-  <video src="https://github.com/WWWandu/Wandu.github.io/raw/main/assets/CRM%20Training-Cut%20Clip.mp4" width="400" autoplay loop muted playsinline></video>
-  <br>
-  <sub>CRM Training</sub>
-  <br><br>
+<br><br>
 
-  <video src="https://github.com/WWWandu/Wandu.github.io/raw/main/assets/Daraja%20System%20Training-%20Cut%20clip.mp4" width="400" autoplay loop muted playsinline></video>
-  <br>
-  <sub>Daraja System Training</sub>
-  <br><br>
+<video src="https://github.com/WWWandu/Wandu.github.io/raw/main/assets/Daraja%20System%20Training-%20Cut%20clip.mp4" width="640" height="360" controls playsinline></video>
+<br>
+<sub>Daraja System Training</sub>
+
+<br><br>
 
 ## 🚀 Achievements & Projects  
 - **Digital Transformation @ Tambulika Sacco** – Supported from data collection to deployment, boosting efficiency & customer support.  
