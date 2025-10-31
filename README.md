@@ -27,35 +27,27 @@ Passionate about **data storytelling, dashboards, and process optimization**, I 
 ## 📂 Projects Showcase  
 
 ### 1. Contact Centre Churn Analysis  
-![Contact Centre Churn Analysis](assets/Contact%20Centre%20Churn%20Analysis.png)  
 *Dashboard highlighting customer churn trends in the contact center with actionable insights.*  
+<video src="https://github.com/WWWandu/Wandu.github.io/raw/main/assets/Customer%20Churn%20Rate.mp4" width="400" autoplay loop muted playsinline></video>
+  <br>
+  <sub>Customer Churn Rate</sub>
+
+</div>
 
 ###  2.🎥 This videos demonstrates my expertise in **system training**, **instructional design**, and **user enablement**. 
 They showcase how I simplify technical processes into clear, engaging learning content that helps users adopt systems with confidence and ease.
  
 <div align="center">
 
-  <table>
-    <tr>
-      <td align="center">
-        <video src="https://github.com/WWWandu/Wandu.github.io/raw/main/assets/CRM%20Training-Cut%20Clip.mp4" width="300" autoplay loop muted playsinline></video>
-        <br>
-        <sub>CRM Training</sub>
-      </td>
-      <td align="center">
-        <video src="https://github.com/WWWandu/Wandu.github.io/raw/main/assets/Daraja%20System%20Training-%20Cut%20clip.mp4" width="300" autoplay loop muted playsinline></video>
-        <br>
-        <sub>Daraja System Training</sub>
-      </td>
-      <td align="center">
-        <video src="https://github.com/WWWandu/Wandu.github.io/raw/main/assets/Customer%20Churn%20Rate.mp4" width="300" autoplay loop muted playsinline></video>
-        <br>
-        <sub>Customer Churn Rate</sub>
-      </td>
-    </tr>
-  </table>
+  <video src="https://github.com/WWWandu/Wandu.github.io/raw/main/assets/CRM%20Training-Cut%20Clip.mp4" width="400" autoplay loop muted playsinline></video>
+  <br>
+  <sub>CRM Training</sub>
+  <br><br>
 
-</div>
+  <video src="https://github.com/WWWandu/Wandu.github.io/raw/main/assets/Daraja%20System%20Training-%20Cut%20clip.mp4" width="400" autoplay loop muted playsinline></video>
+  <br>
+  <sub>Daraja System Training</sub>
+  <br><br>
 
 ## 🚀 Achievements & Projects  
 - **Digital Transformation @ Tambulika Sacco** – Supported from data collection to deployment, boosting efficiency & customer support.  
