@@ -5,7 +5,7 @@
        style="border-radius: 50%; object-fit: cover; box-shadow: 0 0 10px rgba(123, 97, 255, 0.4);" />
 
   <div>
-    <h2>👋 Hi, I'm Wilson Wandu</h2>
+    <h2>Hi, I'm Wilson Wandu</h2>
     <p>Tech-savvy, data-driven, and curious by nature. I thrive on using BI and automation to simplify work, uncover insights, and tell data stories that inspire better decisions.</p>
   </div>
 </div>
