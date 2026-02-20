@@ -68,7 +68,9 @@ They showcase how I simplify technical processes into clear, engaging learning c
 **Business Process Architect**  
 *NCBA Bank – Nairobi, Kenya* | *Oct 2025 – Present* 
 - Lead end-to-end optimization of Power BI dashboards and ETL workflows, automating data refresh cycles and improving report delivery time.
-- Champion process improvements and automation in reporting workflows (CI/CD & Microsoft Fabric) to enhance reliability and scalability
+- Architect enterprise automation initiatives across UiPath, Power Automate, and Power Apps, designing scalable workflows and reusable components.
+- Develop architectural blueprints and solution diagrams using Draw.io and Figma, defining system interactions, dependencies, and governance controls.
+- Lead end-to-end data platform architecture using Microsoft Fabric.
 
 **IT Business Analyst & Instructional Systems Designer**  
 *NCBA Bank – Nairobi, Kenya* | *Feb 2024 – Oct 2025*  
