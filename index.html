@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wilson W. Wandu — Data & Product Insights</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #0d1117;
+    --ink-2: #3a3f4a;
+    --ink-3: #6b7280;
+    --surface: #ffffff;
+    --surface-2: #f5f4f0;
+    --surface-3: #eceae3;
+    --accent: #1a5fb4;
+    --accent-light: #dbeafe;
+    --accent-mid: #3b82f6;
+    --gold: #b45309;
+    --gold-light: #fef3c7;
+    --green: #166534;
+    --green-light: #dcfce7;
+    --border: rgba(0,0,0,0.08);
+    --border-strong: rgba(0,0,0,0.15);
+    --radius: 12px;
+    --radius-lg: 20px;
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--surface-2);
+    color: var(--ink);
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 2.5rem; height: 60px;
+  }
+  .nav-logo {
+    font-family: var(--font-display);
+    font-weight: 800; font-size: 1.1rem;
+    color: var(--ink); letter-spacing: -0.03em; text-decoration: none;
+  }
+  .nav-logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    font-size: 0.85rem; font-weight: 400; letter-spacing: 0.04em;
+    text-transform: uppercase; color: var(--ink-2); text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--accent); }
+  .nav-cta {
+    background: var(--ink) !important; color: white !important;
+    padding: 0.45rem 1.2rem; border-radius: 6px !important;
+  }
+  .nav-cta:hover { background: var(--accent) !important; }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh; display: flex; align-items: center;
+    padding: 6rem 2.5rem 4rem;
+    background: var(--surface); position: relative; overflow: hidden;
+  }
+  .hero-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 4rem; max-width: 1100px; margin: 0 auto; width: 100%;
+    align-items: center;
+  }
+  .profile-row {
+    display: flex; align-items: center; gap: 1rem; margin-bottom: 1.6rem;
+  }
+  .profile-img {
+    width: 72px; height: 72px; border-radius: 50%;
+    object-fit: cover; object-position: top center;
+    border: 3px solid var(--accent-light); flex-shrink: 0;
+  }
+  .profile-name { font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: var(--ink); }
+  .profile-loc { font-size: 0.78rem; color: var(--ink-3); margin-top: 0.15rem; }
+  .profile-badge {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    background: var(--accent-light); color: var(--accent);
+    font-size: 0.7rem; font-weight: 500; letter-spacing: 0.05em;
+    text-transform: uppercase; padding: 0.26rem 0.7rem;
+    border-radius: 100px; margin-top: 0.3rem; width: fit-content;
+  }
+  .profile-badge::before { content:''; width:5px; height:5px; border-radius:50%; background:var(--accent-mid); }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.6rem, 4.5vw, 3.8rem);
+    font-weight: 800; line-height: 1.06;
+    letter-spacing: -0.04em; color: var(--ink); margin-bottom: 1rem;
+  }
+  h1 em { font-style: normal; color: var(--accent); }
+
+  .hero-bio {
+    font-size: 0.96rem; color: var(--ink-2); line-height: 1.78;
+    margin-bottom: 1.8rem; font-weight: 300;
+    border-left: 3px solid var(--accent-light); padding-left: 1rem;
+  }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    padding: 0.75rem 1.6rem; border-radius: 8px;
+    font-family: var(--font-body); font-size: 0.9rem; font-weight: 500;
+    text-decoration: none; transition: all 0.2s; cursor: pointer; border: none;
+  }
+  .btn-primary { background: var(--ink); color: white; }
+  .btn-primary:hover { background: var(--accent); transform: translateY(-1px); }
+  .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--border-strong); }
+  .btn-ghost:hover { background: var(--surface-2); transform: translateY(-1px); }
+
+  /* HERO STATS */
+  .hero-visual { display: flex; flex-direction: column; gap: 12px; }
+  .stat-row { display: grid; gap: 12px; }
+  .stat-row-3 { grid-template-columns: repeat(3,1fr); }
+  .stat-row-2 { grid-template-columns: repeat(2,1fr); }
+  .stat-card {
+    background: var(--surface-2); border-radius: var(--radius);
+    padding: 1.1rem 1rem; border: 1px solid var(--border);
+    animation: fadeUp 0.6s ease both;
+  }
+  .stat-card.blue { background: var(--accent); color: white; border-color: transparent; }
+  .stat-card.dark { background: var(--ink); color: white; border-color: transparent; }
+  .stat-num {
+    font-family: var(--font-display); font-size: 1.75rem;
+    font-weight: 800; line-height: 1; margin-bottom: 0.3rem; color: var(--ink);
+  }
+  .stat-card.blue .stat-num,
+  .stat-card.dark .stat-num { color: white; }
+  .stat-label { font-size: 0.7rem; opacity: 0.65; text-transform: uppercase; letter-spacing: 0.04em; line-height: 1.35; }
+  .stat-card.blue .stat-label,
+  .stat-card.dark .stat-label { color: white; opacity: 0.75; }
+  .skill-pills { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.5rem; }
+  .pill {
+    font-size: 0.68rem; font-weight: 500; padding: 0.25rem 0.6rem;
+    border-radius: 100px; background: var(--surface-3); color: var(--ink-2);
+  }
+  .mini-bars { display: flex; align-items: flex-end; gap: 3px; height: 28px; margin-top: 0.85rem; }
+  .mini-bar { flex: 1; border-radius: 3px 3px 0 0; background: var(--accent-mid); opacity: 0.2; }
+  .mini-bar.on { opacity: 1; }
+
+  /* SECTIONS */
+  section { padding: 5rem 2.5rem; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-label {
+    font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem;
+  }
+  h2 {
+    font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 800; letter-spacing: -0.03em; line-height: 1.1;
+    color: var(--ink); margin-bottom: 0.5rem;
+  }
+  .section-sub { color: var(--ink-2); font-size: 1rem; margin-bottom: 3rem; font-weight: 300; }
+
+  /* SKILLS */
+  #skills { background: var(--surface); }
+  .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 1.5rem; }
+  .skill-group {
+    background: var(--surface-2); border-radius: var(--radius-lg);
+    padding: 1.6rem; border: 1px solid var(--border);
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .skill-group:hover { border-color: var(--accent-mid); transform: translateY(-3px); }
+  .skill-group-icon {
+    width: 40px; height: 40px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem; margin-bottom: 1rem;
+  }
+  .icon-blue { background: var(--accent-light); }
+  .icon-gold { background: var(--gold-light); }
+  .icon-green { background: var(--green-light); }
+  .skill-group h3 {
+    font-family: var(--font-display); font-size: 1rem; font-weight: 700;
+    margin-bottom: 0.8rem; color: var(--ink);
+  }
+  .skill-list { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+  .skill-list li {
+    font-size: 0.88rem; color: var(--ink-2);
+    display: flex; align-items: flex-start; gap: 0.5rem;
+  }
+  .skill-list li::before {
+    content:''; width:5px; height:5px; border-radius:50%;
+    background: var(--accent-mid); flex-shrink:0; margin-top:0.45rem;
+  }
+
+  /* EXPERIENCE */
+  #experience { background: var(--surface-2); }
+  .timeline { position: relative; padding-left: 2rem; }
+  .timeline::before {
+    content:''; position:absolute; left:0; top:6px; bottom:6px;
+    width:2px; background: linear-gradient(to bottom, var(--accent), transparent);
+  }
+  .timeline-item { position:relative; margin-bottom:2.5rem; }
+  .timeline-dot {
+    position:absolute; left:-2.4rem; top:4px;
+    width:14px; height:14px; border-radius:50%;
+    background:var(--accent); border:3px solid var(--surface-2);
+    box-shadow: 0 0 0 2px var(--accent);
+  }
+  .timeline-item:first-child .timeline-dot { animation: pulse 2s infinite; }
+  .timeline-header {
+    display:flex; align-items:flex-start; justify-content:space-between;
+    gap:1rem; margin-bottom:0.8rem;
+  }
+  .timeline-role { font-family:var(--font-display); font-size:1.05rem; font-weight:700; color:var(--ink); }
+  .timeline-company { font-size:0.85rem; color:var(--accent); font-weight:500; margin-top:0.2rem; }
+  .timeline-date {
+    font-size:0.78rem; color:var(--ink-3); white-space:nowrap;
+    background:var(--surface-3); padding:0.25rem 0.7rem; border-radius:100px;
+  }
+  .timeline-bullets { list-style:none; display:flex; flex-direction:column; gap:0.45rem; }
+  .timeline-bullets li { font-size:0.9rem; color:var(--ink-2); display:flex; gap:0.6rem; }
+  .timeline-bullets li::before { content:'▸'; color:var(--accent-mid); flex-shrink:0; font-size:0.75rem; margin-top:0.15rem; }
+
+  /* PROJECTS */
+  #projects { background: var(--surface); }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
+    gap: 1.5rem;
+  }
+  .project-card {
+    background: var(--surface-2); border-radius: var(--radius-lg);
+    border: 1px solid var(--border); overflow: hidden;
+    transition: transform 0.25s, border-color 0.25s;
+    display: flex; flex-direction: column;
+  }
+  .project-card:hover { transform: translateY(-4px); border-color: var(--accent-mid); }
+
+  .video-wrap {
+    position: relative; width: 100%; padding-top: 56.25%;
+    background: #0d1117; overflow: hidden;
+  }
+  .video-wrap video {
+    position: absolute; top:0; left:0;
+    width:100%; height:100%; object-fit:cover;
+  }
+
+  .project-card-body { padding: 1.3rem; flex:1; display:flex; flex-direction:column; }
+  .project-type {
+    font-size:0.7rem; font-weight:500; text-transform:uppercase;
+    letter-spacing:0.07em; color:var(--ink-3); margin-bottom:0.4rem;
+  }
+  .project-card h3 {
+    font-family:var(--font-display); font-size:0.98rem;
+    font-weight:700; color:var(--ink); margin-bottom:0.45rem;
+  }
+  .project-card p { font-size:0.86rem; color:var(--ink-2); line-height:1.6; flex:1; }
+  .project-tags { display:flex; flex-wrap:wrap; gap:0.3rem; margin-top:0.85rem; }
+  .project-tag {
+    font-size:0.68rem; font-weight:500; padding:0.22rem 0.55rem;
+    border-radius:100px; background:var(--surface-3); color:var(--ink-2);
+  }
+  .impact-badge {
+    display:inline-flex; align-items:center; gap:0.35rem;
+    font-size:0.72rem; font-weight:500;
+    background:var(--green-light); color:var(--green);
+    padding:0.25rem 0.65rem; border-radius:100px;
+    margin-top:0.65rem; width:fit-content;
+  }
+  .impact-badge::before { content:'↑'; font-weight:700; }
+
+  /* ABOUT */
+  #about { background: var(--surface-2); }
+  .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; }
+  .edu-card {
+    background:var(--ink); color:white; border-radius:var(--radius-lg);
+    padding:2rem; margin-bottom:1.5rem;
+  }
+  .edu-card h3 { font-family:var(--font-display); font-size:1.15rem; font-weight:700; margin-bottom:0.4rem; }
+  .edu-card .uni { color:rgba(255,255,255,0.55); font-size:0.88rem; margin-bottom:0.2rem; }
+  .edu-card .year { color:rgba(255,255,255,0.35); font-size:0.78rem; }
+  .cert-list { display:flex; flex-direction:column; gap:0.7rem; }
+  .cert-item {
+    background:var(--surface); border-radius:var(--radius);
+    border:1px solid var(--border); padding:0.85rem 1rem;
+    display:flex; align-items:center; gap:0.75rem;
+  }
+  .cert-badge {
+    width:32px; height:32px; border-radius:8px;
+    display:flex; align-items:center; justify-content:center;
+    font-size:0.9rem; flex-shrink:0;
+  }
+  .cert-name { font-size:0.83rem; font-weight:500; color:var(--ink); }
+  .cert-issuer { font-size:0.73rem; color:var(--ink-3); margin-top:0.08rem; }
+
+  /* CONTACT */
+  #contact { background:var(--ink); color:white; text-align:center; }
+  #contact h2 { color:white; }
+  #contact .section-label { color:rgba(255,255,255,0.4); }
+  #contact .section-sub { color:rgba(255,255,255,0.55); }
+  .contact-links { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:2rem; }
+  .contact-link {
+    display:flex; align-items:center; gap:0.5rem;
+    background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.13);
+    color:white; text-decoration:none; padding:0.7rem 1.4rem;
+    border-radius:8px; font-size:0.9rem; transition:all 0.2s;
+  }
+  .contact-link:hover { background:var(--accent); border-color:transparent; }
+
+  footer {
+    background:var(--ink); color:rgba(255,255,255,0.28);
+    text-align:center; padding:1.5rem 2rem; font-size:0.78rem;
+    border-top:1px solid rgba(255,255,255,0.06);
+  }
+
+  @keyframes fadeUp {
+    from { opacity:0; transform:translateY(14px); }
+    to   { opacity:1; transform:translateY(0); }
+  }
+  @keyframes pulse {
+    0%,100% { box-shadow:0 0 0 2px var(--accent); }
+    50%      { box-shadow:0 0 0 6px rgba(26,95,180,0.18); }
+  }
+  .fade-in { opacity:0; transform:translateY(22px); transition:opacity 0.6s ease, transform 0.6s ease; }
+  .fade-in.visible { opacity:1; transform:translateY(0); }
+
+  @media (max-width: 768px) {
+    nav { padding:0 1.2rem; }
+    .nav-links { display:none; }
+    .hero { padding:5rem 1.2rem 3rem; }
+    .hero-grid { grid-template-columns:1fr; gap:2.5rem; }
+    section { padding:3.5rem 1.2rem; }
+    .about-grid { grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#"><span>W</span>W Wandu</a>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid">
+
+    <div>
+      <div class="profile-row">
+        <img src="https://github.com/WWWandu/Wandu.github.io/raw/refs/heads/main/assets/Wilson%20Passport.png"
+             alt="Wilson W. Wandu" class="profile-img">
+        <div>
+          <div class="profile-name">Wilson W. Wandu</div>
+          <div class="profile-loc">📍 Nairobi, Kenya</div>
+          <div class="profile-badge">Open to opportunities</div>
+        </div>
+      </div>
+
+      <h1>Data that drives<br><em>decisions.</em></h1>
+
+      <p class="hero-bio">
+        I'm a Business Intelligence &amp; Product Insights Specialist with 5+ years
+        turning fragmented, cross-system data into strategies that accelerate growth.
+        At NCBA Bank I architect enterprise data pipelines, build executive dashboards,
+        and design AI-powered automation — bridging the gap between raw data and
+        boardroom decisions. I believe the best insight is one that actually changes
+        what happens next.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work ↓</a>
+        <a href="mailto:wilsonwwandu@outlook.com" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="stat-row stat-row-3">
+        <div class="stat-card" style="animation-delay:0.1s">
+          <div class="stat-num">20+</div>
+          <div class="stat-label">Workflow automation initiatives architected</div>
+        </div>
+        <div class="stat-card blue" style="animation-delay:0.2s">
+          <div class="stat-num">30+</div>
+          <div class="stat-label">BI dashboards built &amp; delivered</div>
+        </div>
+        <div class="stat-card" style="animation-delay:0.3s">
+          <div class="stat-num">2+</div>
+          <div class="stat-label">LLM &amp; Agentic AI solutions</div>
+        </div>
+      </div>
+      <div class="stat-row stat-row-2">
+        <div class="stat-card dark" style="animation-delay:0.4s">
+          <div class="stat-num">95%</div>
+          <div class="stat-label">CRM adoption rate achieved via training &amp; guides</div>
+        </div>
+        <div class="stat-card" style="animation-delay:0.45s">
+          <div class="stat-num">5+</div>
+          <div class="stat-label">Years in banking &amp; financial services</div>
+        </div>
+      </div>
+      <div class="stat-row">
+        <div class="stat-card" style="animation-delay:0.5s">
+          <div class="stat-label" style="opacity:0.9;margin-bottom:0.5rem;">Core tools &amp; platforms</div>
+          <div class="skill-pills">
+            <span class="pill">Power BI</span>
+            <span class="pill">MS Fabric</span>
+            <span class="pill">UiPath</span>
+            <span class="pill">Copilot Studio</span>
+            <span class="pill">Power Automate</span>
+            <span class="pill">Dynamics NAV</span>
+          </div>
+          <div class="mini-bars">
+            <div class="mini-bar" style="height:40%"></div>
+            <div class="mini-bar" style="height:55%"></div>
+            <div class="mini-bar on" style="height:70%"></div>
+            <div class="mini-bar on" style="height:85%"></div>
+            <div class="mini-bar on" style="height:100%"></div>
+            <div class="mini-bar on" style="height:90%"></div>
+            <div class="mini-bar on" style="height:78%"></div>
+            <div class="mini-bar on" style="height:95%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <p class="section-label fade-in">What I do</p>
+    <h2 class="fade-in">End-to-end data expertise</h2>
+    <p class="section-sub fade-in">From raw extraction to executive storytelling — I own the full insight lifecycle.</p>
+    <div class="skills-grid">
+      <div class="skill-group fade-in">
+        <div class="skill-group-icon icon-blue">📊</div>
+        <h3>Business Intelligence</h3>
+        <ul class="skill-list">
+          <li>Power BI dashboard design &amp; delivery</li>
+          <li>Microsoft Fabric data pipelines</li>
+          <li>KPI framework design</li>
+          <li>Executive reporting &amp; data storytelling</li>
+          <li>Multi-source data integration</li>
+        </ul>
+      </div>
+      <div class="skill-group fade-in">
+        <div class="skill-group-icon icon-gold">🔍</div>
+        <h3>Product &amp; Customer Analytics</h3>
+        <ul class="skill-list">
+          <li>Customer behavior &amp; segmentation analysis</li>
+          <li>Product performance monitoring</li>
+          <li>Churn analysis &amp; retention insights</li>
+          <li>Market &amp; competitor analysis</li>
+          <li>Pricing &amp; growth opportunity identification</li>
+        </ul>
+      </div>
+      <div class="skill-group fade-in">
+        <div class="skill-group-icon icon-blue">⚙️</div>
+        <h3>Automation &amp; Engineering</h3>
+        <ul class="skill-list">
+          <li>UiPath RPA &amp; robotic process automation</li>
+          <li>Power Automate workflow design</li>
+          <li>Microsoft Copilot Studio (AI agents)</li>
+          <li>ETL pipeline architecture</li>
+          <li>Process optimization &amp; lean reporting</li>
+        </ul>
+      </div>
+      <div class="skill-group fade-in">
+        <div class="skill-group-icon icon-green">🤖</div>
+        <h3>AI &amp; Emerging Tech</h3>
+        <ul class="skill-list">
+          <li>Multi-agent AI system design (MARA)</li>
+          <li>Generative AI for insight workflows</li>
+          <li>AI-powered support bot development</li>
+          <li>Process definition (PDD/TDD) documentation</li>
+          <li>Microsoft Copilot integration</li>
+        </ul>
+      </div>
+      <div class="skill-group fade-in">
+        <div class="skill-group-icon icon-gold">🎬</div>
+        <h3>Communication &amp; Enablement</h3>
+        <ul class="skill-list">
+          <li>Data storytelling for non-technical audiences</li>
+          <li>Explainer &amp; system training video production</li>
+          <li>Instructional design &amp; L&amp;D programs</li>
+          <li>Stakeholder management &amp; engagement</li>
+          <li>IT-to-business translation</li>
+        </ul>
+      </div>
+      <div class="skill-group fade-in">
+        <div class="skill-group-icon icon-green">🏦</div>
+        <h3>Domain Knowledge</h3>
+        <ul class="skill-list">
+          <li>Banking &amp; financial services (NCBA)</li>
+          <li>ERP systems (Microsoft Dynamics NAV)</li>
+          <li>ITSM &amp; CRM platforms</li>
+          <li>Financial modelling &amp; valuation</li>
+          <li>Six Sigma process improvement</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <p class="section-label fade-in">Where I've worked</p>
+    <h2 class="fade-in">5+ years building data solutions</h2>
+    <p class="section-sub fade-in">Across banking and financial services in Kenya.</p>
+    <div class="timeline fade-in">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-header">
+          <div>
+            <div class="timeline-role">Business Process Architect</div>
+            <div class="timeline-company">NCBA Bank Kenya</div>
+          </div>
+          <span class="timeline-date">Oct 2025 – Present</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li>Architect enterprise automation across UiPath, Power Automate &amp; Power Apps — owning end-to-end data pipelines in Microsoft Fabric</li>
+          <li>Built scalable BI workflows enabling real-time operational reporting and leadership decision-making</li>
+          <li>Defined KPIs, structured data models, and delivered dashboards aligned to board-level priorities</li>
+          <li>Designed MARA (Multi-Agent Response Assistant) — an agentic AI system for intelligent ticket resolution and workflow automation</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-header">
+          <div>
+            <div class="timeline-role">IT Business Analyst</div>
+            <div class="timeline-company">NCBA Bank Kenya</div>
+          </div>
+          <span class="timeline-date">Feb 2024 – Oct 2025</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li>Owned the full data lifecycle — extraction, cleaning, transformation, and Power BI visualization for IT and business leadership</li>
+          <li>Produced Daraja ITSM training videos that directly contributed to NCBA Bank achieving ISO 20000 certification</li>
+          <li>Created CRM adoption guides and explainer content that drove system usage from near-zero to 95%</li>
+          <li>Managed IT budgeting, reporting, and digital transformation programs</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-header">
+          <div>
+            <div class="timeline-role">Learning Analyst &amp; Instructional Designer</div>
+            <div class="timeline-company">NCBA Bank Kenya</div>
+          </div>
+          <span class="timeline-date">Dec 2022 – Feb 2024</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li>Developed L&amp;D dashboards; conducted needs assessments and synthesized data across stakeholder groups</li>
+          <li>Certified Instructional Systems Designer (IHRM, 2023)</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-header">
+          <div>
+            <div class="timeline-role">Business Analyst</div>
+            <div class="timeline-company">Tambulika SACCO</div>
+          </div>
+          <span class="timeline-date">May 2019 – Dec 2021</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li>Led financial transformation: revamped collections, increasing efficiency and revenue by 30%</li>
+          <li>Spearheaded digital transformation — end-to-end data collection, structuring, reporting, and insight generation</li>
+          <li>Developed financial statements for audit and shareholder review ensuring accuracy and transparency</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <p class="section-label fade-in">Selected work</p>
+    <h2 class="fade-in">Projects &amp; impact</h2>
+    <p class="section-sub fade-in">BI dashboards, AI solutions, and enablement content — with measurable outcomes.</p>
+
+    <div class="projects-grid">
+
+      <div class="project-card fade-in">
+        <div class="video-wrap">
+          <video controls preload="none"
+            src="https://github.com/WWWandu/Wandu.github.io/raw/refs/heads/main/assets/BI-%20HR%20Diversity.mp4">
+          </video>
+        </div>
+        <div class="project-card-body">
+          <div class="project-type">BI Dashboard</div>
+          <h3>HR Diversity &amp; Inclusion Dashboard</h3>
+          <p>Analyzes workforce diversity using interactive BI visuals — highlighting gender distribution, departmental representation, and inclusion trends to support data-driven HR decisions.</p>
+          <div class="project-tags">
+            <span class="project-tag">Power BI</span>
+            <span class="project-tag">HR Analytics</span>
+            <span class="project-tag">Data Modelling</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="video-wrap">
+          <video controls preload="none"
+            src="https://github.com/WWWandu/Wandu.github.io/raw/refs/heads/main/assets/Customer%20Churn%20Rate.mp4">
+          </video>
+        </div>
+        <div class="project-card-body">
+          <div class="project-type">BI Dashboard · Customer Analytics</div>
+          <h3>Customer Churn Rate Analysis</h3>
+          <p>Explores customer retention using BI dashboards — identifying churn patterns, key risk factors, and actionable insights to improve customer loyalty and reduce attrition.</p>
+          <div class="project-tags">
+            <span class="project-tag">Power BI</span>
+            <span class="project-tag">Churn Modelling</span>
+            <span class="project-tag">Customer Insights</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="video-wrap">
+          <video controls preload="none"
+            src="https://github.com/WWWandu/Wandu.github.io/raw/refs/heads/main/assets/MARA-%20Problem%20Statement%20Multi%20Agent%20Response%20Assistant.mp4">
+          </video>
+        </div>
+        <div class="project-card-body">
+          <div class="project-type">Agentic AI · LLM</div>
+          <h3>MARA — Multi-Agent Response Assistant</h3>
+          <p>Introduces an AI-driven multi-agent system designed to automate responses, improve efficiency, and enhance decision-making through intelligent task coordination across data sources.</p>
+          <div class="project-tags">
+            <span class="project-tag">Agentic AI</span>
+            <span class="project-tag">LLM</span>
+            <span class="project-tag">Copilot Studio</span>
+            <span class="project-tag">Automation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="video-wrap">
+          <video controls preload="none"
+            src="https://github.com/WWWandu/Wandu.github.io/raw/refs/heads/main/assets/Daraja%20System%20Training-%20Cut%20clip.mp4">
+          </video>
+        </div>
+        <div class="project-card-body">
+          <div class="project-type">Data Storytelling · System Enablement</div>
+          <h3>Daraja ITSM System Training</h3>
+          <p>Training content guiding bank staff through ITSM ticket workflows and system features. This initiative directly contributed to NCBA Bank achieving ISO 20000 certification.</p>
+          <div class="impact-badge">Contributed to ISO 20000 Certification</div>
+          <div class="project-tags">
+            <span class="project-tag">ITSM</span>
+            <span class="project-tag">Training</span>
+            <span class="project-tag">ISO 20000</span>
+            <span class="project-tag">Change Management</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="video-wrap">
+          <video controls preload="none"
+            src="https://github.com/WWWandu/Wandu.github.io/raw/refs/heads/main/assets/CRM%20Training-Cut%20Clip.mp4">
+          </video>
+        </div>
+        <div class="project-card-body">
+          <div class="project-type">Data Storytelling · CRM Enablement</div>
+          <h3>CRM System Training &amp; Adoption</h3>
+          <p>A walkthrough of CRM system functionality demonstrating how users manage customer interactions, update records, and streamline communication workflows — driving adoption from near-zero to 95% usage.</p>
+          <div class="impact-badge">95% CRM adoption rate achieved</div>
+          <div class="project-tags">
+            <span class="project-tag">Microsoft CRM</span>
+            <span class="project-tag">Training</span>
+            <span class="project-tag">User Adoption</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="video-wrap">
+          <video controls preload="none"
+            src="https://github.com/WWWandu/Wandu.github.io/raw/refs/heads/main/assets/Introduction%20CUstomer%20Self%20Service%20Portal.mp4">
+          </video>
+        </div>
+        <div class="project-card-body">
+          <div class="project-type">Product Enablement · Automation</div>
+          <h3>Customer Self-Service Portal</h3>
+          <p>Demonstrates a self-service platform enabling customers to access services and resolve issues independently — reducing dependency on support teams through smart automation.</p>
+          <div class="project-tags">
+            <span class="project-tag">Self-Service</span>
+            <span class="project-tag">Automation</span>
+            <span class="project-tag">Customer Experience</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <p class="section-label fade-in">Background</p>
+    <h2 class="fade-in">Education &amp; Certifications</h2>
+    <p class="section-sub fade-in">A foundation in economics meets hands-on data engineering expertise.</p>
+    <div class="about-grid fade-in">
+      <div>
+        <div class="edu-card">
+          <h3>BA Economics &amp; Finance</h3>
+          <div class="uni">Kenyatta University, Nairobi</div>
+          <div class="year">Graduated July 2021</div>
+        </div>
+        <div style="background:var(--surface);border-radius:var(--radius-lg);padding:1.4rem;border:1px solid var(--border);">
+          <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:700;margin-bottom:0.8rem;">Currently building</h3>
+          <ul class="skill-list">
+            <li>MARA — multi-agent AI assistant (agentic architecture)</li>
+            <li>AI-powered product insights workflows</li>
+            <li>Advanced statistical modelling with Python</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="cert-list">
+          <div class="cert-item">
+            <div class="cert-badge icon-blue">🏅</div>
+            <div><div class="cert-name">Microsoft Certified: Power BI Data Analyst</div><div class="cert-issuer">Microsoft</div></div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-badge icon-gold">📊</div>
+            <div><div class="cert-name">PwC Power BI Job Simulation</div><div class="cert-issuer">PwC Switzerland · 2024</div></div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-badge icon-blue">💰</div>
+            <div><div class="cert-name">Financial Modelling &amp; Valuation</div><div class="cert-issuer">Corporate Finance Institute · 2022</div></div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-badge icon-green">⚙️</div>
+            <div><div class="cert-name">Six Sigma Black Belt: KPIs &amp; Process Flows</div><div class="cert-issuer">Skillsoft</div></div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-badge icon-green">🤖</div>
+            <div><div class="cert-name">Generative AI</div><div class="cert-issuer">Microsoft &amp; LinkedIn</div></div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-badge icon-gold">📋</div>
+            <div><div class="cert-name">ITIL Foundation</div><div class="cert-issuer">AXELOS</div></div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-badge icon-blue">🎓</div>
+            <div><div class="cert-name">Certified Instructional Systems Designer</div><div class="cert-issuer">IHRM · 2023</div></div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-badge icon-gold">📐</div>
+            <div><div class="cert-name">Adv. Certificate: Program &amp; Project Management</div><div class="cert-issuer">Udemy</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <p class="section-label">Let's connect</p>
+    <h2>Ready to turn data<br>into decisions?</h2>
+    <p class="section-sub">Open to senior data, product insights, and BI roles in Kenya and beyond.</p>
+    <div class="contact-links">
+      <a href="mailto:wilsonwwandu@outlook.com" class="contact-link">✉ wilsonwwandu@outlook.com</a>
+      <a href="tel:+254716277141" class="contact-link">📞 +254 716 277 141</a>
+      <a href="https://wwwandu.github.io/Wandu.github.io/" class="contact-link" target="_blank">🌐 Portfolio</a>
+      <a href="https://github.com/WWWandu" class="contact-link" target="_blank">💻 GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Wilson W. Wandu · Built with HTML &amp; hosted on GitHub Pages · Nairobi, Kenya</p>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+    { threshold: 0.08 }
+  );
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
